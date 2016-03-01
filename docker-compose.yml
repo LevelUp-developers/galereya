@@ -1,0 +1,12 @@
+web:
+  image: "nginx:1.9"
+  volumes:
+    - ./:/usr/share/nginx/html:ro
+  ports:
+    - "8000:80"
+# command: nginx
+# environment:
+#   HASHDB: /hashdb
+#   ROWS_DB: /rows_db
+#   OUT_PERMISSIONS: 438
+# entrypoint: sleep 15
